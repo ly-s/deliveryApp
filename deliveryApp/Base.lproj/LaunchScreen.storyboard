@@ -16,13 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Nzo-7o-IWX">
-                                <rect key="frame" x="-75" y="-67" width="564" height="1001"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqz-5e-o61">
                                 <rect key="frame" x="94" y="415" width="226" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="splash-1" translatesAutoresizingMaskIntoConstraints="NO" id="BW8-ah-MyZ">
+                                <rect key="frame" x="-113" y="-120" width="640" height="1136"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1k-7P-lC9">
+                                <rect key="frame" x="137" y="574" width="140" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -30,10 +35,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BW8-ah-MyZ" secondAttribute="trailing" constant="-113" id="MU7-0k-IG1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kqz-5e-o61" secondAttribute="bottom" constant="410" id="Ns1-4L-MuE"/>
+                            <constraint firstAttribute="bottom" secondItem="BW8-ah-MyZ" secondAttribute="bottom" constant="-120" id="QD0-5R-B1a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b1k-7P-lC9" secondAttribute="bottom" constant="252" id="Vbj-pq-Z7m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kqz-5e-o61" secondAttribute="trailing" constant="94" id="Xdj-1f-MQu"/>
                             <constraint firstItem="Kqz-5e-o61" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="371" id="Zie-Ll-acB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b1k-7P-lC9" secondAttribute="trailing" constant="137" id="f2w-kT-gKw"/>
                             <constraint firstItem="Kqz-5e-o61" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="h1g-qh-Wc1"/>
+                            <constraint firstItem="BW8-ah-MyZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-120" id="lyE-3N-2yN"/>
+                            <constraint firstItem="b1k-7P-lC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="q7i-IG-WXe"/>
+                            <constraint firstItem="b1k-7P-lC9" firstAttribute="top" secondItem="Kqz-5e-o61" secondAttribute="bottom" constant="122" id="sx9-Ay-l0e"/>
+                            <constraint firstItem="BW8-ah-MyZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="-113" id="uLy-dE-Eyh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,7 +56,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="564" height="1001"/>
+        <image name="splash-1" width="640" height="1136"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -8,9 +8,21 @@
 import UIKit
 
 class RestaurantCell: UITableViewCell {
-    //title label
-   
+    //title label included
     @IBOutlet weak var titleLabel: UILabel!
+    
+    //tag label included
+    @IBOutlet weak var tagLabel: UILabel!
+    
+    
+    //delivery time label included
+    @IBOutlet weak var deliveryTimeLabel: UILabel!
+    
+    //rating label included
+    @IBOutlet weak var ratingLabel: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
