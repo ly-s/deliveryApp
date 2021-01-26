@@ -21,6 +21,8 @@ class RestaurantCell: UITableViewCell {
     //rating label included
     @IBOutlet weak var ratingLabel: UILabel!
     
+    //food name label included
+    @IBOutlet weak var foodNameLabel: UILabel!
     
     
     override func awakeFromNib() {
